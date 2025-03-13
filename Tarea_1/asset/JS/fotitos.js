@@ -1,8 +1,32 @@
-const carousel = new bootstrap.Carousel('#myCarousel')
+document.addEventListener('change', function(event) {
+  mostrarImagen(event, 'previewDaniela');
+});
 
-/*const myCarouselElement = document.querySelector('#myCarousel')
+document.addEventListener("DOMContentLoaded", function () {
+  // Ruta de la imagen y el audio dentro de la misma carpeta
+  const imagenDaniela   = "asset/img/daniela.jpg";  // Nombre de la imagen en la misma carpeta
+  const imagenJuliana     = "juliana.jpg";    // Nombre de la imagen en la misma carpeta
+  const imagenshelcy     = "shelcy.jpeg";    
+  const audioDiagnostico = "audiopuppy.ogg";    // Nombre del audio en la misma carpeta
 
-const carousel = new bootstrap.Carousel(myCarouselElement, {
-  interval: 2000,
-  touch: false
-})*/
+
+  // Cargar imagen del paciente automáticamente
+  const imgDaniela = document.getElementById("previewDaniela");
+  imgDaniela.src = imagenDaniela;
+  imgDaniela.alt = "Foto de Daniela";
+
+  // Cargar imagen del paciente automáticamente
+  const imgDoctor = document.getElementById("previewDoctor");
+  imgDoctor.src = imagenDoctor;
+  imgDoctor.alt = "Foto del Doctor";
+
+   // Cargar imagen del paciente automáticamente
+   const imgMapa = document.getElementById("previewMap");
+   imgMapa.src = imagenMapa;
+   imgMapa.alt = "Foto del mapa";
+
+  // Cargar y reproducir el audio automáticamente
+  const audioPlayer = document.getElementById("audioPlayback");
+  audioPlayer.src = audioDiagnostico;
+  audioPlayer.controls = true; // Muestra los controles de reproducción
+});
