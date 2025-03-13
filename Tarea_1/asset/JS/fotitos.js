@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const imagenJuliana     = "asset/img/juliana.jpg";    // Nombre de la imagen en la misma carpeta
   const imagenShelcy     = "asset/img/shelcy.jpeg";    //Nombre de la imagen y la misma carpeta
   const imagenSamuel    = "asset/img/samuel.jpeg";    //Nombre de la imagen y la misma carpeta
-  const imagenSamuel    = "asset/img/juandavid.jpeg";    //Nombre de la imagen y la misma carpeta
+  const imagenjuandavid   = "asset/img/juan david.jpeg";    //Nombre de la imagen y la misma carpeta
   const audioDiagnostico = "audiopuppy.ogg";    // Nombre del audio en la misma carpeta
 
 
