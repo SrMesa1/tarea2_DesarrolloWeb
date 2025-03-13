@@ -5,7 +5,7 @@ document.addEventListener('change', function(event) {
 document.addEventListener("DOMContentLoaded", function () {
   // Ruta de la imagen y el audio dentro de la misma carpeta
   const imagenDaniela   = "asset/img/daniela.jpg";  // Nombre de la imagen en la misma carpeta
-  const imagenJuliana     = "juliana.jpg";    // Nombre de la imagen en la misma carpeta
+  const imagenJuliana     = "asset/img/juliana.jpg";    // Nombre de la imagen en la misma carpeta
   const imagenshelcy     = "shelcy.jpeg";    
   const audioDiagnostico = "audiopuppy.ogg";    // Nombre del audio en la misma carpeta
 
@@ -16,9 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
   imgDaniela.alt = "Foto de Daniela";
 
   // Cargar imagen del paciente automáticamente
-  const imgDoctor = document.getElementById("previewDoctor");
-  imgDoctor.src = imagenDoctor;
-  imgDoctor.alt = "Foto del Doctor";
+  const imgJuliana = document.getElementById("previewJuliana");
+  imgJuliana.src = imagenJuliana;
+  imgJuliana.alt = "Foto del Juliana";
 
    // Cargar imagen del paciente automáticamente
    const imgMapa = document.getElementById("previewMap");
