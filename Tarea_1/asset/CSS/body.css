@@ -22,7 +22,15 @@ h2
     border-radius: 5px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
     width: 100%;
+    width: fit-content;
     text-align: center;
+    display: inline-block;
+}
+
+marquee {
+    width: 100%; /* Asegura que tenga espacio suficiente para desaparecer */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Asegura que no haya desbordamiento visible */
 }
 
 body
