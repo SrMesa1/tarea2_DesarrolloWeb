@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  const audio = " ";    // asset/img/"NOMBREAUDIO"
-  const video = " ";    // asset/img/"NOMBREVIDEO"
+  /*const audio = " ";    // asset/img/"NOMBREAUDIO"
+  const video = " ";    // asset/img/"NOMBREVIDEO"*/
 
 
   // Cargar imagen del integrante automáticamente

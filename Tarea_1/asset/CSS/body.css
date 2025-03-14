@@ -11,6 +11,10 @@ h1
     text-align: center;
 }
 
+h2
+{
+    text-align: center;
+}
 body
 {
     background: radial-gradient(circle, #E8E3F3, #B3A5D4, #6D5B8C);
