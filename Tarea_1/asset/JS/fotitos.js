@@ -8,12 +8,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const imagenJuliana     = "asset/img/juliana.jpg";    // Nombre de la imagen en la misma carpeta
   const imagenShelcy     = "asset/img/shelcy.jpeg";    //Nombre de la imagen y la misma carpeta
   const imagenSamuel    = "asset/img/samuel.jpeg";    //Nombre de la imagen y la misma carpeta
-
   const imagenjuandavid    = "asset/img/juan david.jpeg";    //Nombre de la imagen y la misma carpeta
+  const audioDaniela = "asset/audio/AUDIO_DANIELA.ogg";
+  const audioShelcy = "asset/audio/AUDIO_SHELCY.ogg";
+  const audioJuanda = "asset/audio/AUDIO_JUANDA.ogg";
+  const audioJuliana = "asset/audio/AUDIO_JULIANA.ogg";
 
-
-
-  /*const audio = " ";    // asset/img/"NOMBREAUDIO"
   const video = " ";    // asset/img/"NOMBREVIDEO"*/
 
 
@@ -44,9 +44,22 @@ document.addEventListener("DOMContentLoaded", function () {
   img.alt = "Foto de Juan David Lopez";
 
   // Cargar y reproducir el audio automáticamente
-  const audioPlayer = document.getElementById("audioPlayback");
-  audioPlayer.src = audio;
-  audioPlayer.controls = true; // Muestra los controles de reproducción
+  const audioPlayer1 = document.getElementById("audioPlayback");
+  audioPlayer1.src = audioDaniela;
+  audioPlayer1.controls = true; // Muestra los controles de reproducción
+
+  const audioPlayer2 = document.getElementById("audioPlayback1");
+  audioPlayer2.src = audioShelcy;
+  audioPlayer2.controls = true; // Muestra los controles de reproducción
+
+  const audioPlayer3 = document.getElementById("audioPlayback2");
+  audioPlayer3.src = audioJuanda;
+  audioPlayer3.controls = true; // Muestra los controles de reproducción
+
+  const audioPlayer4 = document.getElementById("audioPlayback3");
+  audioPlayer4.src = audioJuliana;
+  audioPlayer4.controls = true; // Muestra los controles de reproducción
+
 
   const vidio = document.getElementById("video");
   vidio.src = video;
