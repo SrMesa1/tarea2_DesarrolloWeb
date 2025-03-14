@@ -8,9 +8,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const imagenJuliana     = "asset/img/juliana.jpg";    // Nombre de la imagen en la misma carpeta
   const imagenShelcy     = "asset/img/shelcy.jpeg";    //Nombre de la imagen y la misma carpeta
   const imagenSamuel    = "asset/img/samuel.jpeg";    //Nombre de la imagen y la misma carpeta
-  const imagenjuandavid   = "asset/img/juan david.jpeg";    //Nombre de la imagen y la misma carpeta
-//Nombre de la imagen y la misma carpeta
-  const audioDiagnostico = "audiopuppy.ogg";    // Nombre del audio en la misma carpeta
+
+  const imagenjuandavid    = "asset/img/juan david.jpeg";    //Nombre de la imagen y la misma carpeta
+
+
+
+  const audio = " ";    // asset/img/"NOMBREAUDIO"
+  const video = " ";    // asset/img/"NOMBREVIDEO"
 
 
   // Cargar imagen del integrante automáticamente
@@ -41,6 +45,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Cargar y reproducir el audio automáticamente
   const audioPlayer = document.getElementById("audioPlayback");
-  audioPlayer.src = audioDiagnostico;
+  audioPlayer.src = audio;
   audioPlayer.controls = true; // Muestra los controles de reproducción
+
+  const vidio = document.getElementById("video");
+  vidio.src = video;
+  vidio.controls = true; // Muestra los controles de reproducción
 });

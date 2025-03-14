@@ -21,3 +21,9 @@
 .card-body {
     flex-grow: 1; /* Asegura que todas las tarjetas tengan la misma altura */
 }
+
+.card-body{
+    background-color: #F8F9FA;
+    color: #2F2F2F;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
