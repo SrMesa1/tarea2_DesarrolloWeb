@@ -56,3 +56,17 @@ body
     margin: 0;
     font-family: 'Arial', sans-serif;
 }
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    
+}
+
+.video-card {
+    width: 50rem; /* Ajusta el tamaño si es necesario */
+}
