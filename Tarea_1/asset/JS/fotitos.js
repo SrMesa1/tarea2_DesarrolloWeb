@@ -13,6 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const audioShelcy = "asset/audio/AUDIO_SHELCY.ogg";
   const audioJuanda = "asset/audio/AUDIO_JUANDA.ogg";
   const audioJuliana = "asset/audio/AUDIO_JULIANA.ogg";
+  const audioSamuel = "asset/audio/AUDIO_SAMUEL.ogg";
+
 
   const video = " ";    // asset/img/"NOMBREVIDEO"*/
 
@@ -59,6 +61,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const audioPlayer4 = document.getElementById("audioPlayback3");
   audioPlayer4.src = audioJuliana;
   audioPlayer4.controls = true; // Muestra los controles de reproducción
+
+  const audioPlayer5 = document.getElementById("audioPlayback4");
+  audioPlayer5.src = audioSamuel;
+  audioPlayer5.controls = true; // Muestra los controles de reproducción
 
 
   const vidio = document.getElementById("video");
