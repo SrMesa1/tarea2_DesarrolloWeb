@@ -14,10 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const audioJuanda = "asset/audio/AUDIO_JUANDA.ogg";
   const audioJuliana = "asset/audio/AUDIO_JULIANA.ogg";
   const audioSamuel = "asset/audio/AUDIO_SAMUEL.ogg";
-
-
-  const video = " ";    // asset/img/"NOMBREVIDEO"*/
-
+  const video = "asset/video/SUSTENTACION.mp4";  
 
   // Cargar imagen del integrante automáticamente
   const imgDaniela = document.getElementById("previewDaniela");
@@ -66,8 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
   audioPlayer5.src = audioSamuel;
   audioPlayer5.controls = true; // Muestra los controles de reproducción
 
-
-  const vidio = document.getElementById("video");
-  vidio.src = video;
-  vidio.controls = true; // Muestra los controles de reproducción
+  const videoSustentacion = document.getElementById("video1");
+  videoSustentacion.src = video;
+  videoSustentacion.controls = true; // Muestra los controles de reproducción
 });
