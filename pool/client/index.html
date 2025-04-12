@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto integrado de AULA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav>
+    <h4>holaaaa</h4>
+  </nav>
+
+  <div class="container">
+    <h1 class="titulo1">Acceso Proyectos PIA</h1>
+    <div class="panel">
+      <div class="controls">
+        <button id="btn-listar">Listar tipo de proyectos (GET)</button>
+        <button id="btn-crear">Crear Proyecto(POST)</button>
+        <button id="btn-actualizar">Actualizar Proyecto(PUT)</button>
+        <button id="btn-eliminar">Eliminar Proyecto(DELETE)</button>
+      </div>
+      
+      <div class="form-container" id="formGET">
+        <h2>Datos proyecto PIA</h2>
+        <form id="Proyectos-form">
+          <div class="form-group">
+            <label for="Codigo">Codigo: </label>
+            <input  id="codigo" name="codigo">
+          </div>
+          <div class="form-group">
+            <label for="descripicion">Documento:</label>
+            <input type="text" id="descripicion" name="descripcion" required>
+          </div>
+          <div class="form-group">
+            <label for="abreviatura">Abreviatura:</label>
+            <input type="text" id="abreviatura" name="abreviatura" required>
+          </div>
+          <div class="form-group">
+            <label for="fecharegistro">Fecha Registro:</label>
+            <input type="text" id="fecharegistro" name="fecharegistro" required>
+          </div>
+        </form>
+      </div>
+
+      <div class="form-container" id="formPOST" style="display: none;">
+        <h2>Crear Proyecto (POST)</h2>
+        <form id="crearProyecto-form">
+          <div class="form-group">
+            <label for="codigoPost">Código:</label>
+            <input type="text" id="codigoPost" name="codigo" required>
+          </div>
+          <div class="form-group">
+            <label for="documentoPost">Documento:</label>
+            <input type="text" id="documentoPost" name="documento" required>
+          </div>
+          <div class="form-group">
+            <label for="abreviaturaPost">Abreviatura:</label>
+            <input type="text" id="abreviaturaPost" name="abreviatura" required>
+          </div>
+          <div class="form-group">
+            <label for="fechaPost">Fecha Registro:</label>
+            <input type="date" id="fechaPost" name="fecha" required>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+      
+      <div class="form-container" id="formPUT" style="display: none;">
+        <h2>Actualizar Proyecto (PUT)</h2>
+        <form id="actualizarProyecto-form">
+          
+          <div class="form-group">
+            <label for="nuevaAbreviaturaPut">Nueva Abreviatura:</label>
+            <input type="text" id="nuevaAbreviaturaPut" name="abreviatura">
+          </div>
+          <div class="form-group">
+            <label for="nuevaFechaPut">Nueva Fecha:</label>
+            <input type="date" id="nuevaFechaPut" name="fecha">
+          </div>
+          <button type="submit">Actualizar</button>
+        </form>
+      </div>
+      
+      <div class="form-container" id="formDELETE" style="display: none;">
+        <h2>Eliminar Proyecto (DELETE)</h2>
+        <form id="eliminarProyecto-form">
+          <div class="form-group">
+            <label for="idDelete">Codigo:</label>
+            <input type="text" id="idDelete" name="id" required>
+          </div>
+          <button type="submit">Eliminar</button>
+        </form>
+      </div>
+     
+
+      
+      
+      <div class="response-container">
+        <h2>Respuesta del Servidor</h2>
+        <div class="status-code">Código HTTP: <span id="status-code">---</span></div>
+        <pre id="response-message">Esperando operación...</pre>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+ 
+</body>
+</html>

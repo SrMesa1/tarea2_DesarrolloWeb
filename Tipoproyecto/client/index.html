@@ -5,13 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Proyecto integrado de AULA</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <header id="Header">
+    <img src="IMAGENES/Logoheader.png" class="logo" alt="">
+    <input type="checkbox" id="menu">
+    <label for="menu">
+      <img src="IMAGENES/Menuprincipal1.png" class="menu-icono" alt="">
+    </label>
+    
+    <ul class="menu">
+      <li class="item">Proyectos</li>
+      <li class="item">Creacion</li>
+      <li class="item">Actualizaciones</li>
+      <li class="item">Cancelar</li>
+    </ul>
+  </header>
+
   <div class="container">
     <h1>Acceso Proyectos PIA</h1>
     <div class="panel">
       <div class="controls">
-        <button id="btn-listar">Listar tipo de proyectos </button>
         <button id="btn-crear">Crear Proyecto </button>
         <button id="btn-actualizar">Actualizar Proyecto </button>
         <button id="btn-eliminar">Eliminar Proyecto</button>
@@ -25,17 +43,14 @@
             <input type="number" id="codigo" name="codigo">
           </div>
           <div class="form-group">
-            <label for="descripicion">Descripicion:</label>
+            <label for="descripicion">Descripcion:</label>
             <input type="text" id="descripcion" name="descripcion" required>
           </div>
           <div class="form-group">
             <label for="abreviatura">Abreviatura:</label>
             <input type="text" id="abreviatura" name="abreviatura" required>
           </div>
-          <div class="form-group">
-            <label for="fecharegistro">Fecha Registro:</label>
-            <input type="text" id="fecharegistro" name="fecharegistro" required>
-          </div>
+          <button id="btn-listar">Listar tipo de proyectos </button>
         </form>
       </div>
       
