@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto integrado de AULA</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Acceso Proyectos PIA</h1>
+    <div class="panel">
+      <div class="controls">
+        <button id="btn-listar">Listar tipo de proyectos </button>
+        <button id="btn-crear">Crear Proyecto </button>
+        <button id="btn-actualizar">Actualizar Proyecto </button>
+        <button id="btn-eliminar">Eliminar Proyecto</button>
+      </div>
+      
+      <div class="form-container">
+        <h2>Datos del Proyecto</h2>
+        <form id="tipoproyecto-form">
+          <div class="form-group">
+            <label for="Codigo">Codigo:</label>
+            <input type="number" id="codigo" name="codigo">
+          </div>
+          <div class="form-group">
+            <label for="descripicion">Descripicion:</label>
+            <input type="text" id="descripcion" name="descripcion" required>
+          </div>
+          <div class="form-group">
+            <label for="abreviatura">Abreviatura:</label>
+            <input type="text" id="abreviatura" name="abreviatura" required>
+          </div>
+          <div class="form-group">
+            <label for="fecharegistro">Fecha Registro:</label>
+            <input type="text" id="fecharegistro" name="fecharegistro" required>
+          </div>
+        </form>
+      </div>
+      
+      <div class="response-container">
+        <h2>Respuesta del Servidor</h2>
+        <div class="status-code">Código HTTP: <span id="status-code">---</span></div>
+        <pre id="response-message">Esperando operación...</pre>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
